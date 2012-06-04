@@ -1,0 +1,16 @@
+{
+    "id": "ExtBox1-ext-gen44406",
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "app/lib/Localizer.js"
+    },
+    "customConfigs": [],
+    "designerId": "351c4f9d-c643-4eb0-af84-f169f5dc058e",
+    "$viewOrder": 0,
+    "expanded": true
+}
