@@ -28,7 +28,7 @@ Ext.define("LS.lib.Localizer", {
 		label : ["text"],
 		// Ext.grid
 		gridcolumn : ["text"],
-		panel : ["title"],
+		panel : ["title"]
 	},
 	
 	/**
@@ -254,7 +254,7 @@ Ext.define("LS.lib.Localizer", {
 			return key;
 		}
 		return localized;
-	},
+	}
 });
 
 Localizer = LS.lib.Localizer;
