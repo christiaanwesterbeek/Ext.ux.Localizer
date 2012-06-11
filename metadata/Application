@@ -11,7 +11,7 @@
             "MyStore"
         ],
         "views": [
-            "MyWindow"
+            "MyViewport"
         ],
         "autoCreateViewport": true,
         "name": "MyApp",
@@ -23,32 +23,5 @@
     "designerId": "application",
     "$viewOrder": 0,
     "iconCls": "icon-application",
-    "expanded": true,
-    "cn": [
-        {
-            "id": "ExtBox1-ext-gen8054",
-            "type": "fixedfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "launch",
-                "implHandler": [
-                    "console.log(\"create\");\r",
-                    "var w = Ext.create(\"MyApp.view.MyWindow\");\r",
-                    "console.log(\"localize\");\r",
-                    "Localizer.localize(w);\r",
-                    "console.log(\"show\");\r",
-                    "w.show();\r",
-                    "// Ext.create(\"MyApp.view.MyWindow\").show();"
-                ],
-                "designer|userClassName": "launch"
-            },
-            "customConfigs": [],
-            "iconCls": "icon-basic-function",
-            "expanded": true
-        }
-    ]
+    "expanded": true
 }

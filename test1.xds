@@ -19,15 +19,6 @@
     "xdsBuild": "442",
     "framework": "ext40",
     "topInstanceFileMap": {
-        "94edc13c-2b32-4955-baf3-2c0a4d118875": {
-            "paths": [
-                "metadata/view/MyWindow",
-                "app/view/override/MyWindow.js",
-                "app/view/MyWindow.js",
-                "app/view/Viewport.js"
-            ],
-            "className": "MyWindow"
-        },
         "3db9a366-a908-4806-86eb-3559d485f2a5": {
             "paths": [
                 "metadata/store/MyStore",
@@ -49,6 +40,15 @@
                 "app/controller/MyToolbar.js"
             ],
             "className": "MyToolbar"
+        },
+        "f4ea77da-d016-420f-b03e-bb5862889ceb": {
+            "paths": [
+                "metadata/view/MyViewport",
+                "app/view/override/MyViewport.js",
+                "app/view/MyViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyViewport"
         }
     },
     "expandedState": {

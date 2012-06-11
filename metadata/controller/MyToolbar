@@ -25,13 +25,34 @@
             "userConfig": {
                 "fn": "onCyclebuttonChange",
                 "implHandler": [
-                    "console.log('new language:', item.itemId);"
+                    "console.log('new language:', item.itemId);\r",
+                    "\r",
+                    "var viewport=this.getVp();\r",
+                    "    \r",
+                    "Localizer.localize(viewport, item.itemId);\r",
+                    ""
                 ],
                 "name": "change",
                 "scope": "me",
                 "designer|targetType": "Ext.button.Cycle",
                 "designer|controlQuery": "toolbar cycle#language",
                 "designer|userClassName": "onCyclebuttonChange"
+            },
+            "customConfigs": [],
+            "expanded": true
+        },
+        {
+            "id": "ExtBox1-ext-gen2785",
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "vp",
+                "selector": "viewport",
+                "designer|userClassName": "vp"
             },
             "customConfigs": [],
             "expanded": true

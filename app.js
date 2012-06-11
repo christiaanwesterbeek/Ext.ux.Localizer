@@ -22,22 +22,11 @@ Ext.application({
         'MyStore'
     ],
     views: [
-        'MyWindow'
+        'MyViewport'
     ],
     autoCreateViewport: true,
     name: 'MyApp',
     controllers: [
         'MyToolbar'
-    ],
-
-    launch: function() {
-        console.log("create");
-        var w = Ext.create("MyApp.view.MyWindow");
-        console.log("localize");
-        Localizer.localize(w);
-        console.log("show");
-        w.show();
-        // Ext.create("MyApp.view.MyWindow").show();
-    }
-
+    ]
 });

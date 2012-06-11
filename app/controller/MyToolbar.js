@@ -16,8 +16,20 @@
 Ext.define('MyApp.controller.MyToolbar', {
     extend: 'Ext.app.Controller',
 
+    refs: [
+        {
+            ref: 'vp',
+            selector: 'viewport'
+        }
+    ],
+
     onCyclebuttonChange: function(cycle, item, options) {
         console.log('new language:', item.itemId);
+
+        var viewport=this.getVp();
+
+        Localizer.localize(viewport, item.itemId);
+
     },
 
     init: function() {
