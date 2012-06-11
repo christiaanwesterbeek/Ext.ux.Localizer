@@ -1,4 +1,4 @@
-Ext.define("LS.lib.Localizer", {
+Ext.define("Ext.ux.Localizer", {
 	/***** WORK IN PROGRESS *****/
 
 	singleton : true,
@@ -257,7 +257,7 @@ Ext.define("LS.lib.Localizer", {
 	}
 });
 
-Localizer = LS.lib.Localizer;
+Localizer = Ext.ux.Localizer;
 _ = function(key, locale) {
 	return Localizer.getLocalizedString(key, locale);
 }
