@@ -17,7 +17,7 @@
     "customConfigs": [],
     "designerId": "94edc13c-2b32-4955-baf3-2c0a4d118875",
     "$viewOrder": 0,
-    "expanded": false,
+    "expanded": true,
     "cn": [
         {
             "id": "ExtBox1-ext-gen6904",
@@ -32,7 +32,7 @@
                 "dock": "top"
             },
             "customConfigs": [],
-            "expanded": false,
+            "expanded": true,
             "cn": [
                 {
                     "id": "ExtBox1-ext-gen7103",
@@ -49,6 +49,121 @@
                     },
                     "customConfigs": [],
                     "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen3988",
+                    "type": "tbfill",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyFill",
+                        "layout|flex": null
+                    },
+                    "customConfigs": [],
+                    "expanded": true
+                },
+                {
+                    "id": "ExtBox1-ext-gen3063",
+                    "type": "cyclebutton",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "language",
+                        "showText": true,
+                        "designer|userClassName": "MyCycleButton",
+                        "layout|flex": null
+                    },
+                    "customConfigs": [],
+                    "expanded": true,
+                    "cn": [
+                        {
+                            "id": "ExtBox1-ext-gen3075",
+                            "type": "menu",
+                            "reference": {
+                                "name": "menu",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "width": 120,
+                                "designer|userClassName": "MyMenu"
+                            },
+                            "customConfigs": [],
+                            "expanded": true,
+                            "cn": [
+                                {
+                                    "id": "ExtBox1-ext-gen3082",
+                                    "type": "menucheckitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "en",
+                                        "text": "English",
+                                        "designer|userClassName": "MyCheckItem"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen3094",
+                                    "type": "menucheckitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "es",
+                                        "text": "Español",
+                                        "designer|userClassName": "MyCheckItem1"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen3106",
+                                    "type": "menucheckitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "fr",
+                                        "text": "Français",
+                                        "designer|userClassName": "MyCheckItem2"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                },
+                                {
+                                    "id": "ExtBox1-ext-gen4607",
+                                    "type": "menucheckitem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "itemId": "nl",
+                                        "text": "Nederlands",
+                                        "designer|userClassName": "MyCheckItem2"
+                                    },
+                                    "customConfigs": [],
+                                    "expanded": true
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -191,7 +306,9 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "fn": "onBoton1Click",
-                                        "implHandler": "Ext.Msg.alert(_(\"Warning\"), _(\"W0500\"));",
+                                        "implHandler": [
+                                            "Ext.Msg.alert(_(\"Warning\"), _(\"W0500\"));"
+                                        ],
                                         "name": "click",
                                         "scope": "me",
                                         "designer|userClassName": "onBoton1Click"

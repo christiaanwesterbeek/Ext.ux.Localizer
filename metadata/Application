@@ -14,7 +14,10 @@
             "MyWindow"
         ],
         "autoCreateViewport": true,
-        "name": "MyApp"
+        "name": "MyApp",
+        "controllers": [
+            "MyToolbar"
+        ]
     },
     "customConfigs": [],
     "designerId": "application",
@@ -32,7 +35,15 @@
             "codeClass": null,
             "userConfig": {
                 "fn": "launch",
-                "implHandler": "console.log(\"create\");\r\nvar w = Ext.create(\"MyApp.view.MyWindow\");\r\nconsole.log(\"localize\");\r\nLocalizer.localize(w);\r\nconsole.log(\"show\");\r\nw.show();\r\n// Ext.create(\"MyApp.view.MyWindow\").show();",
+                "implHandler": [
+                    "console.log(\"create\");\r",
+                    "var w = Ext.create(\"MyApp.view.MyWindow\");\r",
+                    "console.log(\"localize\");\r",
+                    "Localizer.localize(w);\r",
+                    "console.log(\"show\");\r",
+                    "w.show();\r",
+                    "// Ext.create(\"MyApp.view.MyWindow\").show();"
+                ],
                 "designer|userClassName": "launch"
             },
             "customConfigs": [],

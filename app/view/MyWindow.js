@@ -33,6 +33,40 @@ Ext.define('MyApp.view.MyWindow', {
                         {
                             xtype: 'button',
                             text: 'MyButton'
+                        },
+                        {
+                            xtype: 'tbfill'
+                        },
+                        {
+                            xtype: 'cycle',
+                            itemId: 'language',
+                            showText: true,
+                            menu: {
+                                xtype: 'menu',
+                                width: 120,
+                                items: [
+                                    {
+                                        xtype: 'menucheckitem',
+                                        itemId: 'en',
+                                        text: 'English'
+                                    },
+                                    {
+                                        xtype: 'menucheckitem',
+                                        itemId: 'es',
+                                        text: 'Español'
+                                    },
+                                    {
+                                        xtype: 'menucheckitem',
+                                        itemId: 'fr',
+                                        text: 'Français'
+                                    },
+                                    {
+                                        xtype: 'menucheckitem',
+                                        itemId: 'nl',
+                                        text: 'Nederlands'
+                                    }
+                                ]
+                            }
                         }
                     ]
                 }

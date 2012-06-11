@@ -26,6 +26,9 @@ Ext.application({
     ],
     autoCreateViewport: true,
     name: 'MyApp',
+    controllers: [
+        'MyToolbar'
+    ],
 
     launch: function() {
         console.log("create");

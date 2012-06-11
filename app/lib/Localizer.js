@@ -196,7 +196,7 @@ Ext.define("LS.lib.Localizer", {
 	loadLocaleStrings: function(locale) {
 		var me = this, localeStrings;
 		Ext.Ajax.request({
-			url : "./app/locale/" + locale + ".json",
+			url : "./app/locale/" + locale + ".js",
 			async : false,
 			success : function(response) {
 				var entries = Ext.decode(response.responseText);

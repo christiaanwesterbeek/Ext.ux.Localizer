@@ -1,0 +1,40 @@
+{
+    "id": "ExtBox1-ext-gen5358",
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyToolbar"
+    },
+    "customConfigs": [],
+    "designerId": "d9d6a458-4f33-469d-baa9-f5113b4947f9",
+    "$viewOrder": 0,
+    "expanded": true,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen5615",
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onCyclebuttonChange",
+                "implHandler": [
+                    "console.log('new language:', item.itemId);"
+                ],
+                "name": "change",
+                "scope": "me",
+                "designer|targetType": "Ext.button.Cycle",
+                "designer|controlQuery": "toolbar cycle#language",
+                "designer|userClassName": "onCyclebuttonChange"
+            },
+            "customConfigs": [],
+            "expanded": true
+        }
+    ]
+}
