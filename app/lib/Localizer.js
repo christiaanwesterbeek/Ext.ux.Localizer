@@ -38,7 +38,7 @@ Ext.define("LS.lib.Localizer", {
 	 * If some itemId must be excluded, assign an array of itemId names.
 	 */
 	excludeTypes : {
-		paggingtoolbar : {
+		pagingtoolbar : {
 			itemIds : ["first", "prev", "inputItem", "afterTextItem", "next", "last", "refresh", "displayItem"]
 		}
 	},
