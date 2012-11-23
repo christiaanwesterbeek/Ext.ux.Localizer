@@ -1,3 +1,18 @@
+/**
+ * Allow for language change after language change after language change etc.
+ * Go back to original language using initialConfig
+ * Localizable grid values through column renderers!
+ * When components need tooltips, I usually add them as a tip property to the same component. That tooltip can be translated as well.
+ * Prevention against word wraps after translation that I have seen occuring.
+ * renamed locale file to js, because IIS for example can't read .json files by default. (just to make it easy to test run this)
+ * Most of my comments and changes are described in the commits and code. Code is mostly equal to what ssamayoa has posted.
+ * This is work in progress and needs further optimization. Specially in the area of configurability.
+ *
+ * @author Sergio Samayoa (creator) http://www.sencha.com/forum/showthread.php?182631-Different-languages-Translations&p=797073&viewfull=1#post797073
+ * @author Christiaan Westerbeek (contributor)
+ * @see	 http://www.sencha.com/forum/showthread.php?182631-Different-languages-Translations&p=797073&viewfull=1#post797073
+ */
+
 Ext.define("Ext.ux.Localizer", {
     
     singleton : true,
