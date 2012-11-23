@@ -1,7 +1,7 @@
 Ext.ux.Localizer
 ================
 
-The concept is simple: to localize a component you just call Localizer.localize(component, locale).
+The concept is simple: to localize a component you just call Localizer.localize(component, locale). Like: Localizer.localize(component, "nl");
 
 The class looks for localized strings in "locales" property and if is not loaded tries
 to load it synchronously from ./app/locale/<code>.js.
