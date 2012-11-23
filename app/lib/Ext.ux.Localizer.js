@@ -1,13 +1,8 @@
 Ext.define("Ext.ux.Localizer", {
-    /***** WORK IN PROGRESS *****/
     
     singleton : true,
     baseLocale : "en",
     currLocale : "en",
-
-    /**
-     * @private (Ext.util.HashMap) locales
-     */
 
     /**
      * @private (Object) localizableProps

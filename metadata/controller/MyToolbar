@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen5358",
     "type": "controller",
     "reference": {
         "name": "items",
@@ -9,13 +8,10 @@
     "userConfig": {
         "designer|userClassName": "MyToolbar"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen5358",
     "designerId": "d9d6a458-4f33-469d-baa9-f5113b4947f9",
-    "$viewOrder": 0,
-    "expanded": true,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen5615",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -23,6 +19,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onCyclebuttonChange",
                 "fn": "onCyclebuttonChange",
                 "implHandler": [
                     "console.log('new language:', item.itemId);\r",
@@ -35,14 +32,11 @@
                 "name": "change",
                 "scope": "me",
                 "designer|targetType": "Ext.button.Cycle",
-                "designer|controlQuery": "toolbar cycle#language",
-                "designer|userClassName": "onCyclebuttonChange"
+                "designer|controlQuery": "toolbar cycle#language"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "bacc4dba-06f5-4a32-a476-6dd710ad8456"
         },
         {
-            "id": "ExtBox1-ext-gen2785",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -50,12 +44,11 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "vp",
                 "ref": "vp",
-                "selector": "viewport",
-                "designer|userClassName": "vp"
+                "selector": "viewport"
             },
-            "customConfigs": [],
-            "expanded": true
+            "designerId": "880cada9-782b-4d6c-b7b6-7b5ab0d84e5a"
         }
     ]
 }

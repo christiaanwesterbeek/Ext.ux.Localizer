@@ -3,20 +3,22 @@
     "settings": {
         "urlPrefix": "",
         "spacesToIndent": 4,
-        "codeGenFormat": "Class",
         "exportPath": "",
-        "extPath": "http://cdn.sencha.io/ext-4.1.0-gpl/",
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "codeGenFormat": "Class",
         "senchaIoKey": "",
         "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
-        "lineEnding": "CRLF",
         "instantiateStore": true,
-        "genTimestamps": false,
         "saveOnDeploy": false,
-        "appName": "MyApp",
-        "mapsAPI": "http://maps.google.com/maps/api/js?sensor=true"
+        "appName": "MyApp"
     },
-    "xdsVersion": "2.0.0",
-    "xdsBuild": "442",
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 676,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
     "framework": "ext40",
     "topInstanceFileMap": {
         "3db9a366-a908-4806-86eb-3559d485f2a5": {
@@ -49,13 +51,31 @@
                 "app/view/Viewport.js"
             ],
             "className": "MyViewport"
+        },
+        "5b75ce16-616e-48c3-b3c1-b6091f74ed80": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
         }
     },
-    "expandedState": {
-        "data": false,
-        "model": true,
-        "component": true,
-        "controller": true,
-        "resource": false
+    "viewOrderMap": {
+        "view": [
+            "f4ea77da-d016-420f-b03e-bb5862889ceb"
+        ],
+        "store": [
+            "3db9a366-a908-4806-86eb-3559d485f2a5"
+        ],
+        "controller": [
+            "d9d6a458-4f33-469d-baa9-f5113b4947f9"
+        ],
+        "model": [],
+        "resource": [
+            "5b75ce16-616e-48c3-b3c1-b6091f74ed80",
+            "351c4f9d-c643-4eb0-af84-f169f5dc058e"
+        ],
+        "app": [
+            "application"
+        ]
     }
 }
