@@ -19,13 +19,13 @@ boxLabel
 --------
 For ExtJS < 4.2, if you want to localize boxLabels, you need to add setBoxLabel to be able to localize boxLabels at runtime (already rendered)
 
-Ext.override(Ext.form.field.Checkbox, {
-    setBoxLabel: function(boxLabel){
-        var me = this;
+    Ext.override(Ext.form.field.Checkbox, {
+        setBoxLabel: function(boxLabel){
+            var me = this;
         
-        me.boxLabel = boxLabel;
-        if (me.rendered) {
-            me.boxLabelEl.update(boxLabel);
+            me.boxLabel = boxLabel;
+            if (me.rendered) {
+                me.boxLabelEl.update(boxLabel);
+            }
         }
-    }
-});
+    });
