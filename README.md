@@ -11,8 +11,21 @@ to load it synchronously from ./app/locale/<code>.js. Then for each component in
 and for each one looks for the equivalent translated value.
 
 It allows language change after language change after language change etc.
-An excellent fit with a cycle button wher you can switch language.
-
-In order for me to work just include Ext.ux.Localizer.js
+An excellent fit with a cycle button where you can switch language.
 
 This git repo includes a Sencha Architect file that demos the Localizer.
+
+boxLabel
+--------
+For ExtJS < 4.2, if you want to localize boxLabels, you need to add setBoxLabel to be able to localize boxLabels at runtime (already rendered)
+
+Ext.override(Ext.form.field.Checkbox, {
+    setBoxLabel: function(boxLabel){
+        var me = this;
+        
+        me.boxLabel = boxLabel;
+        if (me.rendered) {
+            me.boxLabelEl.update(boxLabel);
+        }
+    }
+});
